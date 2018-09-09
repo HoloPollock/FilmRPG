@@ -1,0 +1,37 @@
+<script>
+    function menu()
+    {
+        var menu = document.getElementById("menu");
+        var button = document.getElementById("menu-button");
+        
+        if(button.innerHTML == "CLOSE")
+        {
+            button.innerHTML = "MENU";
+            menu.style.width = "10px";
+        }
+        else
+        {
+            button.innerHTML = "CLOSE";
+            menu.style.width = "400px";
+        }
+    }
+</script>
+<div id="menu">
+    <button id="menu-button" onclick="menu()">MENU</button>
+    <div class="inner-menu">
+        <h1 style="margin-left: 30px;color: black;">film rpg</h1>
+        <ul>
+            <li><a href="./">HOME</a></li>
+            <li><a>CHARACTER SHEETS</a></li>
+            <li><a>GENRE MODUALS</a></li>
+            <li><a>CHAPTERS</a></li>
+            <ul>
+                <li><a>1. What is this game</a></li>
+                <li><a>2. Who is this game</a></li>
+                <li><a id="current-page">3. Why am im writting these</a></li>
+                <li><a>4. Today is gunna be the day</a></li>
+                <li><a>5. Maybe your oven mitts</a></li>
+            </ul>
+        </ul>
+    </div>
+</div>
