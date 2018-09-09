@@ -1,19 +1,19 @@
 @font-face
 {
     font-family: pra;
-    src: url("./Fonts/19-PRA Light.ttf");
+    src: url("./assets/fonts/19-PRA Light.ttf");
 }
 
 @font-face
 {
     font-family: avenir;
-    src: url("./Fonts/AvenirNext-Regular-08.ttf");
+    src: url("./assets/fonts/AvenirNext-Regular-08.ttf");
 }
 
 @font-face
 {
     font-family: atlas;
-    src: url("./Fonts/AtlasTypewriter-Medium-Web.ttf");
+    src: url("./assets/fonts/AtlasTypewriter-Medium-Web.ttf");
 }
 
 html
