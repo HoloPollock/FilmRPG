@@ -1,8 +1,8 @@
 <div class="page-navigation">
     {% if page.previous.url %}
-        <a class="prev" href="/FilmRPG{{page.previous.url}}"><span class="chapter">{{ page.previous.chapter }}.</span><br>{{ page.previous.title }}<br>←</a>
+        <a class="prev" href="/FilmRPG{{page.previous.url}}"><span class="chapter">PREV ←<br>{{ page.previous.chapter }}.</span> {{ page.previous.title }}</a>
     {% endif %}
     {% if page.next.url %}
-        <a class="next" href="/FilmRPG{{page.next.url}}"><span class="chapter">{{ page.next.chapter }}.</span><br>{{ page.next.title }}<br>→</a>
+        <a class="next" href="/FilmRPG{{page.next.url}}"><span class="chapter">NEXT →<br>{{ page.next.chapter }}.</span> {{ page.next.title }}</a>
     {% endif %}
 </div>
