@@ -25,9 +25,10 @@
             <li><a>CHARACTER SHEETS</a></li>
             <li><a>GENRE MODUALS</a></li>
             <li><a>CHAPTERS</a></li>
+            {{ page.url }}
             <ul>
             {% for post in site.posts %}
-                <li><a {% if page.url = {{ post.url }} %} id="current-page" {% endif %} href="{{ site.baseurl }}{{ post.url }}">{{ post.chapter }}. {{ post.title }}</a></li>
+                <li><a {% if page.url == post.url %} id="current-page" {% endif %} href="{{ site.baseurl }}{{ post.url }}">{{ post.chapter }}. {{ post.title }}</a></li>
             {% endfor %}
             </ul>
         </ul>
