@@ -7,7 +7,7 @@ layout: default
 <div class="posts">
     {% for post in site.posts %}
         <div tabindex="0" class="catalog" onclick="window.location='{{ site.baseurl }}{{ post.url }}'">
-            <h3>{{ post.title }}</h3>
+            <h1>{{ post.title }}</h1>
         </div>
     {% endfor %}
 </div>
