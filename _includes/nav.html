@@ -1,8 +1,8 @@
 <div class="page-navigation">
     {% if page.previous.url %}
-        <a class="prev" href="{{page.previous.url}}"><span class="chapter">{{ page.previous.chapter }}.</span><br>{{ page.previous.title }}<br>←</a>
+        <a class="prev" href="{{baseurl}}{{page.previous.url}}"><span class="chapter">{{ page.previous.chapter }}.</span><br>{{ page.previous.title }}<br>←</a>
     {% endif %}
     {% if page.next.url %}
-        <a class="next" href="{{page.next.url}}"><span class="chapter">{{ page.next.chapter }}.</span><br>{{ page.next.title }}<br>→</a>
+        <a class="next" href="{{baseurl}}{{page.next.url}}"><span class="chapter">{{ page.next.chapter }}.</span><br>{{ page.next.title }}<br>→</a>
     {% endif %}
 </div>
