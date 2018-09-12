@@ -1,7 +1,8 @@
 ---
 layout: post
 title: What is this game?
-chapter: 1
+section: 1
+chapter: 2
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices metus sit amet odio aliquam, vitae venenatis ipsum varius. Aenean ornare ligula eu rhoncus convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In fermentum turpis at quam egestas, sed cursus erat tempus. Nulla facilisi. Sed at mauris ultrices, iaculis odio vitae, pellentesque libero. Phasellus porttitor suscipit mauris, at euismod diam laoreet sed. Nam faucibus ornare purus et sollicitudin. Nullam augue turpis, finibus non pellentesque id, blandit non est. Curabitur ac tellus vitae metus accumsan accumsan eget sed risus. Donec bibendum mauris lacus, at semper odio maximus id. Maecenas ac nibh eget arcu lacinia condimentum. Cras aliquam id nulla in pellentesque. Suspendisse in bibendum est. Nam posuere, lacus ac congue eleifend, odio metus porttitor lacus, quis viverra massa mi nec magna.

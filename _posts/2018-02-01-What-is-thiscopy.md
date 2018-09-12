@@ -1,6 +1,7 @@
 ---
 layout: post
 title: What is this game?
+section: 2
 chapter: 1
 ---
 
