@@ -134,7 +134,7 @@ p
 .inner-menu ul 
 {
     list-style: none;
-    margin: 20px -10px;
+    margin: 0px -10px;
 }
 
 .inner-menu ul ul a
@@ -181,4 +181,5 @@ li.chapter
 {
     color: #666;
     line-height: 3rem;
+    padding-top: 20px;
 }
