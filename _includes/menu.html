@@ -22,13 +22,13 @@
         <h1 style="margin-left: 30px;color: black;">Film RPG</h1>
         <ul>
             <li><a href="{{ site.baseurl }}">HOME</a></li>
-            <li><a href="/Character-Sheets" >CHARACTER SHEETS</a></li>
-            <li><a href="/Genres" >GENRE MODUALS</a></li>
-            <li><a href="/Chapters" >CHAPTERS</a></li>
+            <li><a href="{{ site.baseurl }}/Character-Sheets" >CHARACTER SHEETS</a></li>
+            <li><a href="{{ site.baseurl }}/Genres" >GENRE MODUALS</a></li>
+            <li><a href="{{ site.baseurl }}/Chapters" >CHAPTERS</a></li>
             <ul>
             {% for post in site.posts reversed %}
                 {% if post.chapter != post.previous.chapter %}
-                    <li>CHAPTER {{ post.chapter }}</li>
+                    <li class="chapter">CHAPTER {{ post.chapter }}</li>
                 {% endif %}
                 <li><a {% if page.url == post.url %} id="current-page" {% endif %} href="{{ site.baseurl }}{{ post.url }}">{{ post.section }}. {{ post.title }}</a></li>
             {% endfor %}
