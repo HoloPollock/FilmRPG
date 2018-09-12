@@ -19,14 +19,14 @@
 <div id="menu">
     <button id="menu-button" onclick="menu()">MENU</button>
     <div class="inner-menu">
-        <h1 style="margin-left: 30px;color: black;">film rpg</h1>
+        <h1 style="margin-left: 30px;color: black;">Film RPG</h1>
         <ul>
-            <li><a href="./">HOME</a></li>
-            <li><a>CHARACTER SHEETS</a></li>
-            <li><a>GENRE MODUALS</a></li>
-            <li><a>CHAPTERS</a></li>
+            <li><a href="{{ site.baseurl }}">HOME</a></li>
+            <li><a href="/Character-Sheets" >CHARACTER SHEETS</a></li>
+            <li><a href="/Genres" >GENRE MODUALS</a></li>
+            <li><a href="/Chapters" >CHAPTERS</a></li>
             <ul>
-            {% for post in site.posts %}
+            {% for post in site.posts reversed %}
                 <li><a {% if page.url == post.url %} id="current-page" {% endif %} href="{{ site.baseurl }}{{ post.url }}">{{ post.chapter }}. {{ post.title }}</a></li>
             {% endfor %}
             </ul>
