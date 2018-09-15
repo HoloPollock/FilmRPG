@@ -102,6 +102,7 @@ p
 
 #menu-button
 {
+    z-index: 1000;
     color: var(--secondary);
     font-weight: 100;
     font-family: var(--ui-type);
@@ -133,6 +134,11 @@ p
     overflow: hidden;
     white-space: nowrap;
     margin: 10px;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    position: fixed;
 }
 
 .inner-menu a
