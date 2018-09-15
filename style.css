@@ -55,6 +55,15 @@ p
     text-align: justify;
 }
 
+#logo
+{
+    margin-left: 30px;
+    color: black;
+    transform: rotate(-10deg) skew(-10deg, 0);
+    margin-bottom: 80px;
+    letter-spacing: 0.1rem;
+}
+
 .content p:first-of-type::first-letter
 {
     float: left;
@@ -87,7 +96,7 @@ p
     left: 0;
     min-height: 100%;
     width: 10px;
-    box-shadow: 0px 0px 200px 30px transparent;
+    box-shadow: 0px 0px 200px 30px var(--shadow);
     transition: all 0.3s ease;
 }
 

@@ -8,20 +8,18 @@
         {
             button.innerHTML = "MENU";
             menu.style.width = "10px";
-            menu.style.boxShadow = "0px 0px 200px 30px transparent;";
         }
         else
         {
             button.innerHTML = "CLOSE";
             menu.style.width = "400px";
-            menu.style.boxShadow = "0px 0px 200px 30px var(--shadow);";
         }
     }
 </script>
 <div id="menu">
     <button id="menu-button" onclick="menu()">MENU</button>
     <div class="inner-menu">
-        <h1 style="margin-left: 30px;color: black;">Film RPG</h1>
+        <h1 id="logo">Silverscreen</h1>
         <ul>
             <li><a href="{{ site.baseurl }}">HOME</a></li>
             <li><a href="{{ site.baseurl }}/Character-Sheets" >CHARACTER SHEETS</a></li>
