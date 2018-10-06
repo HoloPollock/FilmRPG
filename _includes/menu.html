@@ -3,16 +3,29 @@
     {
         var menu = document.getElementById("menu");
         var button = document.getElementById("menu-button");
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         
         if(button.innerHTML == "CLOSE")
         {
             button.innerHTML = "MENU";
             menu.style.width = "10px";
+            
+            button.style.right = "0";
+            button.style.color = "var(--secondary)";
+            button.style.boxShadow = "transparent 0px 0px 0px 2px inset";
         }
         else
         {
             button.innerHTML = "CLOSE";
             menu.style.width = "400px";
+            
+            if(width <= 500)
+            {
+                menu.style.width = "100%";
+                button.style.right = "65px";
+                button.style.color = "var(--primary)";
+                button.style.boxShadow = "var(--primary) 0px 0px 0px 2px inset";
+            }
         }
     }
 </script>
@@ -26,12 +39,13 @@
             <li><a href="{{ site.baseurl }}/Genres" >GENRE MODUALS</a></li>
             <li><a href="{{ site.baseurl }}/Chapters" >CHAPTERS</a></li>
             <ul>
-            {% for post in site.posts reversed %}
+                {% for post in site.posts reversed %}
                 {% if post.chapter != post.previous.chapter %}
-                    <li class="chapter">CHAPTER {{ post.chapter }}</li>
+                <li class="chapter">CHAPTER {{ post.chapter }}</li>
                 {% endif %}
                 <li><a {% if page.url == post.url %} id="current-page" {% endif %} href="{{ site.baseurl }}{{ post.url }}">{{ post.section }}. {{ post.title }}</a></li>
-            {% endfor %}
+                {% endfor %}
+                <li class="chapter"> </li>
             </ul>
         </ul>
     </div>

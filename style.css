@@ -58,10 +58,11 @@ p
 #logo
 {
     margin-left: 30px;
-    color: black;
+    color: var(--primary);
     transform: rotate(-10deg) skew(-10deg, 0);
     margin-bottom: 80px;
     letter-spacing: 0.1rem;
+    font-size: 3.5rem;
 }
 
 .content p:first-of-type::first-letter
