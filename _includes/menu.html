@@ -12,7 +12,12 @@
             
             button.style.right = "0";
             button.style.color = "var(--secondary)";
-            button.style.boxShadow = "transparent 0px 0px 0px 2px inset";
+            
+            if(width <= 500)
+            {
+                button.style.boxShadow = "transparent 0px 0px 0px 2px inset";
+            }
+            
         }
         else
         {
