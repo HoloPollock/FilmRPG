@@ -12,12 +12,7 @@
             
             button.style.right = "0";
             button.style.color = "var(--secondary)";
-            
-            if(width <= 500)
-            {
-                button.style.boxShadow = "transparent 0px 0px 0px 2px inset";
-            }
-            
+            button.classList.remove("circled");
         }
         else
         {
@@ -29,7 +24,7 @@
                 menu.style.width = "100%";
                 button.style.right = "65px";
                 button.style.color = "var(--primary)";
-                button.style.boxShadow = "var(--primary) 0px 0px 0px 2px inset";
+                button.classList.add("circled");
             }
         }
     }

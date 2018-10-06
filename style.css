@@ -211,3 +211,8 @@ li.chapter
     line-height: 3rem;
     padding-top: 20px;
 }
+
+.circled
+{
+    box-shadow: var(--primary) 0px 0px 0px 2px inset;
+}
