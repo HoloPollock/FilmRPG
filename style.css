@@ -89,7 +89,7 @@ p
     padding: 0 10px 50px 10px;
 }
 
-#menu
+.menu
 {
     background-color: var(--secondary);
     position: fixed;
@@ -99,6 +99,11 @@ p
     width: 10px;
     box-shadow: 0px 0px 200px 30px var(--shadow);
     transition: all 0.3s ease;
+}
+
+.menu-open
+{
+    width: 400px;
 }
 
 .menu-button
@@ -127,6 +132,27 @@ p
 {
     border-color: var(--secondary);
     box-shadow: inset 0px 0px 0px 2px var(--primary);;
+}
+
+@media only screen and (max-width: 500px)
+{
+    .menu
+    {
+        width: 4px;
+        box-shadow: 0px 0px 200px 30px var(--shadow);
+    }
+    
+    .menu-open
+    {
+        width: 100%;
+    }
+    
+    .menu-button-open
+    {
+        color: var(--primary);
+        right: 65px;
+        box-shadow: var(--primary) 0px 0px 0px 2px inset;
+    }
 }
 
 .inner-menu
@@ -185,7 +211,7 @@ p
     display: block;
     float: left;
     max-width: 350px;
-    margin: 1em 0;
+    margin: 1em 30px;
     color: var(--secondary);
     font-family: var(--hero-type);
     font-size: 1.5rem;
@@ -210,9 +236,4 @@ li.chapter
     color: var(--soft-primary);
     line-height: 3rem;
     padding-top: 20px;
-}
-
-.circled
-{
-    box-shadow: var(--primary) 0px 0px 0px 2px inset;
 }

@@ -8,28 +8,20 @@
         if(button.innerHTML == "CLOSE")
         {
             button.innerHTML = "MENU";
-            menu.style.width = "10px";
             
-            button.style.right = "0";
-            button.style.color = "var(--secondary)";
-            button.classList.remove("circled");
+            menu.classList.remove("menu-open");
+            button.classList.remove("menu-button-open");
         }
         else
         {
             button.innerHTML = "CLOSE";
-            menu.style.width = "400px";
             
-            if(width <= 500)
-            {
-                menu.style.width = "100%";
-                button.style.right = "65px";
-                button.style.color = "var(--primary)";
-                button.classList.add("circled");
-            }
+            menu.classList.add("menu-open");
+            button.classList.add("menu-button-open");
         }
     }
 </script>
-<div id="menu">
+<div id="menu" class="menu">
     <button id="menu-button" class="menu-button" onclick="menu()">MENU</button>
     <div class="inner-menu">
         <h1 id="logo">Silverscreen</h1>
