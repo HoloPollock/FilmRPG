@@ -9,9 +9,7 @@
         {% include menu.html %}
         <div class="title">
             <h1><span class="chapter">
-            {% assign newvar = page.error | plus: 0 %}
-            {% capture newvar %}{{newvar}}{% endcapture %}
-            {% if page.error == newvar %}Error {% endif %}{{ page.error }}
+                {{ page.error }}
             </span><span style="display: none;"> - </span><br>
                 {{ page.message }}
             </h1>
