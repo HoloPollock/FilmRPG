@@ -24,16 +24,16 @@
 <div id="menu" class="menu">
     <button id="menu-button" class="menu-button" onclick="menu()">MENU</button>
     <div class="inner-menu">
-        <h1 id="logo">Silverscreen</h1>
+        <a href="{{ site.baseurl }}"><h1 id="logo">Silverscreen</h1></a>
         <ul>
             <li><a href="{{ site.baseurl }}">HOME</a></li>
             <li><a href="{{ site.baseurl }}/Character-Sheets" >CHARACTER SHEETS</a></li>
             <li><a href="{{ site.baseurl }}/Genres" >GENRE MODUALS</a></li>
-            <li><a href="{{ site.baseurl }}/Chapters" >CHAPTERS</a></li>
+            <li><a href="{{ site.baseurl }}/Playbook" >PLAYBOOK</a></li>
             <ul>
                 {% for post in site.posts reversed %}
                 {% if post.chapter != post.previous.chapter %}
-                <li class="chapter">CHAPTER {{ post.chapter }}</li>
+                <li class="chapter">Chapter {{ post.chapter }}</li>
                 {% endif %}
                 <li><a {% if page.url == post.url %} id="current-page" {% endif %} href="{{ site.baseurl }}{{ post.url }}">{{ post.section }}. {{ post.title }}</a></li>
                 {% endfor %}
