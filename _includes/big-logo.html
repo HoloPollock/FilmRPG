@@ -1,0 +1,47 @@
+<script>
+    function twinkle() 
+    {
+        var color = ["#FFFFFF", "#E6E6E6", "#CCCCCC", "#B3B3B3", "#999999", "#808080", "#7F7F7F", "#666666", "#4C4C4C", "#333333"];
+
+        document.getElementById("letter-01").style.color = color[Math.floor(Math.random() * color.length)];
+        document.getElementById("letter-02").style.color = color[Math.floor(Math.random() * color.length)];
+        document.getElementById("letter-03").style.color = color[Math.floor(Math.random() * color.length)];
+        document.getElementById("letter-04").style.color = color[Math.floor(Math.random() * color.length)];
+        document.getElementById("letter-05").style.color = color[Math.floor(Math.random() * color.length)];
+        document.getElementById("letter-06").style.color = color[Math.floor(Math.random() * color.length)];
+        document.getElementById("letter-07").style.color = color[Math.floor(Math.random() * color.length)];
+        document.getElementById("letter-08").style.color = color[Math.floor(Math.random() * color.length)];
+        document.getElementById("letter-09").style.color = color[Math.floor(Math.random() * color.length)];
+        document.getElementById("letter-10").style.color = color[Math.floor(Math.random() * color.length)];
+        document.getElementById("letter-11").style.color = color[Math.floor(Math.random() * color.length)];
+        document.getElementById("letter-12").style.color = color[Math.floor(Math.random() * color.length)];
+    }
+</script>
+<div class="title">
+    <h1 id="big-logo">
+    <span id="letter-01">S</span>
+    <span id="letter-02">i</span>
+    <span id="letter-03">l</span>
+    <span id="letter-04">v</span>
+    <span id="letter-05">e</span>
+    <span id="letter-06">r</span>
+    <span id="letter-07">s</span>
+    <span id="letter-08">c</span>
+    <span id="letter-09">r</span>
+    <span id="letter-10">e</span>
+    <span id="letter-11">e</span>
+    <span id="letter-12">n</span>
+    <br><span class="chapter">A Table-Top RPG</span></h1>
+</div>
+<script>
+    setInterval(function() 
+    {
+        twinkle();
+    }, 500 );
+</script>
+
+<!--
+<div class="title">
+    <h1 id="big-logo">Silverscreen<br><span class="chapter">A Table-Top RPG</span></h1>
+</div>
+-->

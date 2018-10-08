@@ -4,13 +4,14 @@ layout: default
 
 {% include menu.html %}
 
-<div class="posts">
-    {% for post in site.posts %}
-        <div tabindex="0" class="catalog" onclick="window.location='{{ site.baseurl }}{{ post.url }}'">
-            <h1>{{ post.title }}</h1>
-        </div>
-    {% endfor %}
+{% include big-logo.html %}
+
+<div class="content">
+
+<!-- hero image -->
+
+    <h3>Silverscreen is an original table-top role playing game, based on the fundementals of cinimatic storytelling. 
+    <br>
+    <br>
+    Read <a href="{{ site.baseurl }}/Playbook">The Playbook</a> for more information and for rules on how to play. Character sheets can be found <a href="{{ site.baseurl }}/Character-Sheets">here</a>, and Genre Moduals can be found <a href="{{ site.baseurl }}/Genres">here</a>.</h3>
 </div>
-
-
-
