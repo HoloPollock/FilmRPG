@@ -9,12 +9,15 @@
         {% include menu.html %}
         <div class="title">
             <h1><span class="chapter">
-                ERROR {{ page.error }}
+            {% assign newvar = page.error | plus: 0 %}
+            {% capture newvar %}{{newvar}}{% endcapture %}
+            {% if page.error == newvar %}Error {% endif %}{{ page.error }}
             </span><span style="display: none;"> - </span><br>
                 {{ page.message }}
             </h1>
+            <img src="{{ site.baseurl }}/assets/{{ page.image }}" style="width:300px;margin-bottom:50px">
             <div class="page-navigation">
-                <a class="prev" style="float:none;max-width: max-content;margin: 0 auto;" href="{{ site.baseurl }}">Return home</a>
+                <a class="prev" style="float:none;max-width: max-content;margin: 0 auto;" href="{{ site.baseurl }}">Return Home</a>
             </div>
         </div>
     </body>
