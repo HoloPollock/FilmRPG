@@ -82,6 +82,8 @@ h3
     color: var(--secondary); 
     margin: 100px 0px 50px 0px;
     line-height: 0.6;
+    position: relative;
+    z-index: -1;
 }
 
 #big-logo .chapter
