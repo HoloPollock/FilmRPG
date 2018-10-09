@@ -255,6 +255,13 @@ li.chapter
     padding-top: 20px;
 }
 
+.error-img
+{
+    width: 300px;
+    max-width: 95%;
+    margin-bottom: 50px;
+}
+
 @media only screen and (max-width: 500px)
 {
     #logo
