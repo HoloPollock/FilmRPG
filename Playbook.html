@@ -17,13 +17,13 @@ permalink: /Playbook/
     </div>
 </div>
 
-<div class="content">
+<div class="page-navigation">
     {% for post in site.posts reversed %}
     {% if post.chapter != post.previous.chapter %}
-    <h3 class="chapter">Chapter {{ post.chapter }}</h3>
+    <h3 class="chapter" style="text-align:left;">Chapter {{ post.chapter }}</h3>
     {% endif %}
-    <div class="page-navigation">
-        <a class="prev" href=""><span class="chapter">{{ post.section }}.</span> {{ post.title }}</a>
+    <div class="page-navigation" style="margin-bottom:0;">
+        <a class="prev" href="{{ post.url }}" style="margin:0;"><span class="chapter">{{ post.section }}.</span> {{ post.title }}</a>
     </div>
     {% endfor %}
 </div>
