@@ -1,0 +1,30 @@
+---
+layout: default
+title: Playbook
+permalink: /Playbook/
+---
+
+{% include menu.html %}
+
+<div class="title">
+    <h1><span class="chapter">
+        The
+    </span><br>
+        Playbook
+    </h1>
+    <div class="content">
+        <h3>The following Playbook contains all the information required to play Silverscreen, as well as explanations about the decisions made.</h3>
+    </div>
+    
+    <ul>
+        <ul>
+            {% for post in site.posts reversed %}
+            {% if post.chapter != post.previous.chapter %}
+            <li class="chapter">Chapter {{ post.chapter }}</li>
+            {% endif %}
+            <li><a {% if page.url == post.url %} id="current-page" {% endif %} href="{{ site.baseurl }}{{ post.url }}">{{ post.section }}. {{ post.title }}</a></li>
+            {% endfor %}
+            <li class="chapter"> </li>
+        </ul>
+    </ul>
+</div>
