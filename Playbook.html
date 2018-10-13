@@ -23,7 +23,7 @@ permalink: /Playbook/
     <h3 class="chapter" style="text-align:left;margin-top:40px;">Chapter {{ post.chapter }}</h3>
     {% endif %}
     <div class="page-navigation" style="margin-bottom:0;">
-        <a class="prev" href="{{ post.url }}" style="margin:10px 0;"><span class="chapter">{{ post.section }}.</span> {{ post.title }}</a>
+        <a class="prev" href="{{ site.baseurl }}{{ post.url }}" style="margin:10px 0;"><span class="chapter">{{ post.section }}.</span> {{ post.title }}</a>
     </div>
     {% endfor %}
 </div>
