@@ -30,11 +30,13 @@
 
 html
 {
-    background-color: var(--primary);;
+    background-color: #000;
+    background-color: var(--primary);
 }
 
 .chapter
 {
+    font-family: "Atlas Typewriter";
     font-family: var(--ui-type);
     font-size: 0.8rem;
     text-transform: uppercase;
@@ -42,7 +44,9 @@ html
 
 h1
 {
+    font-family: "19-PRA";
     font-family: var(--hero-type);
+    color: #fff;
     color: var(--secondary);
     font-size: 3rem;
     font-weight: 100;
@@ -50,7 +54,9 @@ h1
 
 p
 {
+    font-family: "Avenir";
     font-family: var(--body-type);
+    color: #fff;
     color: var(--secondary);
     font-weight: 200;
     text-align: justify;
@@ -58,14 +64,17 @@ p
 
 h3
 {
+    color: #fff;
     color: var(--secondary);
     font-weight: 100;
+    font-family: "Avenir";
     font-family: var(--body-type);
     text-align: center;
 }
 
 hr
 {
+    background-color: #fff;
     background-color: var(--secondary);
     height: 2px;
     border: none;
@@ -73,13 +82,16 @@ hr
 
 blockquote
 {
+    border-left: 2px solid #fff;
     border-left: 2px solid var(--secondary);
     padding-left: 20px;
 }
 
 table
 { 
+    color: #fff;
     color: var(--secondary);
+    font-family: "Avenir";
     font-family: var(--body-type);
 }
 
@@ -90,7 +102,9 @@ td, th
 
 .content li 
 {
+    color: #fff;
     color: var(--secondary);
+    font-family: "Avenir";
     font-family: var(--body-type);
     padding: 5px 0;
 }
@@ -98,6 +112,7 @@ td, th
 #logo
 {
     margin-left: 30px;
+    color: #000;
     color: var(--primary);
     transform: rotate(-10deg) skew(-10deg, 0);
     margin-bottom: 80px;
@@ -110,6 +125,7 @@ td, th
     transform: rotate(-10deg) skew(-10deg, 0);
     letter-spacing: 0.1rem;
     font-size: 5rem; 
+    color: #fff;
     color: var(--secondary); 
     margin: 100px 0px 50px 0px;
     line-height: 0.6;
@@ -125,6 +141,7 @@ td, th
 .content > p:first-of-type::first-letter
 {
     float: left;
+    font-family: "19-PRA";
     font-family: var(--hero-type);
     font-size: 4.5rem;
     line-height: 3rem;
@@ -135,15 +152,19 @@ td, th
 
 .content a 
 {
+    color: rgba(255, 255, 255, 0.6);
     color: var(--soft-secondary);
     text-decoration: none;
+    box-shadow: inset rgba(255, 255, 255, 0.6) 0px -2px 0px 0px;
     box-shadow: inset var(--soft-secondary) 0px -2px 0px 0px;
     transition: 0.1s all linear;
 }
 
 .content a:hover
 {
+    color: #fff;
     color: var(--secondary);
+    box-shadow: inset #fff 0px -2px 0px 0px;
     box-shadow: inset var(--secondary) 0px -2px 0px 0px;
 }
 
@@ -162,12 +183,14 @@ td, th
 
 .menu
 {
+    background-color: #fff;
     background-color: var(--secondary);
     position: fixed;
     top: 0;
     left: 0;
     min-height: 100%;
     width: 10px;
+    box-shadow: 0px 0px 200px 30px #000;
     box-shadow: 0px 0px 200px 30px var(--shadow);
     transition: all 0.3s ease;
 }
@@ -180,8 +203,10 @@ td, th
 .menu-button
 {
     z-index: 1000;
+    color: #fff;
     color: var(--secondary);
     font-weight: 100;
+    font-family: "Atlas Typewriter";
     font-family: var(--ui-type);
     font-size: 0.8rem;
     background: transparent;
@@ -201,8 +226,10 @@ td, th
 
 .menu-button:hover
 {
+    border-color: #fff;
     border-color: var(--secondary);
-    box-shadow: inset 0px 0px 0px 2px var(--primary);;
+    box-shadow: inset 0px 0px 0px 2px #000;
+    box-shadow: inset 0px 0px 0px 2px var(--primary);
 }
 
 .inner-menu
@@ -220,7 +247,9 @@ td, th
 
 .inner-menu a
 {
-    color: var(--primary);;
+    color: #000;
+    color: var(--primary);
+    font-family: "Atlas Typewriter";
     font-family: var(--ui-type);
     font-size: 0.8rem;
     text-decoration: none;
@@ -231,8 +260,10 @@ td, th
 
 .inner-menu a:hover, #current-page
 {
-    border-color: var(--primary);;
-    color: var(--primary);;
+    border-color: #000;
+    color: #000;
+    border-color: var(--primary);
+    color: var(--primary);
 }
 
 .inner-menu ul 
@@ -243,6 +274,7 @@ td, th
 
 .inner-menu ul ul a
 {
+    color: rgba(0, 0, 0, 0.6);
     color: var(--soft-primary);
     text-transform: uppercase;
 }
@@ -262,7 +294,9 @@ td, th
     float: left;
     max-width: 350px;
     margin: 1em 30px;
+    color: #fff;
     color: var(--secondary);
+    font-family: "19-PRA";
     font-family: var(--hero-type);
     font-size: 1.5rem;
     text-decoration: none;
@@ -278,11 +312,13 @@ td, th
 
 .page-navigation a:hover
 {
+    border-color: #fff;
     border-color: var(--secondary);
 }
 
 li.chapter
 {
+    color: rgba(0, 0, 0, 0.6);
     color: var(--soft-primary);
     line-height: 3rem;
     padding-top: 20px;
@@ -325,13 +361,16 @@ li.chapter
     
     .menu-button
     {
+        text-shadow: #000 0px -1px 5px;
         text-shadow: var(--shadow) 0px -1px 5px;
     }
     
     .menu-button-open
     {
+        color: #000;
         color: var(--primary);
         right: 65px;
+        box-shadow: #000 0px 0px 0px 2px inset;
         box-shadow: var(--primary) 0px 0px 0px 2px inset;
         text-shadow: none;
     }
